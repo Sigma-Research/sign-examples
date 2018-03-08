@@ -40,7 +40,7 @@
 ```
 {
   "type" : "express", // 暂时只支持这个
-  "data":"http://www.xxxx.com/xxxx.jpg",// 图片地址和图片base64编码
+  "data":"http://www.xxxx.com/xxxx.jpg",// 图片地址或者图片base64编码
 }
 ```
 #### 正常返回
