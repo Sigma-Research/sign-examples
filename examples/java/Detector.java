@@ -31,7 +31,6 @@ public class Detector {
             byte[] bytes = new byte[(int)originalFile.length()];
             fileInputStreamReader.read(bytes);
             encodedBase64 = new String(Base64.encodeBase64(bytes));
-            return encodedBase64;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
