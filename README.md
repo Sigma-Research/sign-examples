@@ -25,11 +25,12 @@
 
 注：
 
-1.app-key app-secret是分配给第三方用户的唯一标识
+1.app-key app-secret是分配给第三方用户的唯一标识，请不要在请求的任何地方或者浏览器中附带app-secret
 
-2.app-timestamp,app-nonstr每次请求都需生成，保证每次的签名不一致
+2.app-timestamp,app-nonstr每次请求都需生成，保证每次的签名不一致，签名算法请务必在服务器端完成！
 
 3.签名（app-signature）每次请求都需生成，请求完成后立即失效，生成5分钟未使用即为失效
+
 ## 域名
 ```
 http://api.manhattan.hexinedu.com
@@ -53,25 +54,25 @@ body
 
 ```
 {
-	"status": 0, // 只有status=0是正常返回
-	"statusInfo": "500ms",
-	"data": {
-		"receiveProvince": "XXX",
-		"receiveCompany": "XX",
-		"dest": "1",
-		"insuranceCharge": "1",
-		"receiveCustomerPhone": "XX",
-		"goodsNumber": "1",
-		"receiveCustomerName": "XXXXXXXXX",
-		"clientCode": "XXXXXXXXX",
-		"chargedWeight": "18",
-		"actualWeight": "2",
-		"insuranceAmount": "3000",
-		"goodsName": "XX",
-		"packages": "1",
-		"standardExpress": "0",
-		"receiveStreet": "XXX"
-	}
+    "status": 0, // 只有status=0是正常返回
+    "statusInfo": "500ms",
+    "data": {
+        "receiveProvince": "XXX",
+        "receiveCompany": "XX",
+        "dest": "1",
+        "insuranceCharge": "1",
+        "receiveCustomerPhone": "XX",
+        "goodsNumber": "1",
+        "receiveCustomerName": "XXXXXXXXX",
+        "clientCode": "XXXXXXXXX",
+        "chargedWeight": "18",
+        "actualWeight": "2",
+        "insuranceAmount": "3000",
+        "goodsName": "XX",
+        "packages": "1",
+        "standardExpress": "0",
+        "receiveStreet": "XXX"
+    }
 }
 ```
 
