@@ -18,7 +18,7 @@ const base64data = buff.toString('base64');
 
 
 request({
-  url: 'http://rbs.hexinedu.com/api/open/task/detect',
+  url: 'http://api.manhattan.hexindeu.com/task/detect',
   method: 'post',
   form: {
     type: 'express',

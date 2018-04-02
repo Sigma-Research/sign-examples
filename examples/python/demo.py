@@ -29,6 +29,6 @@ headers = {
     'app-signature': app_signature
 }
 
-result = requests.post('http://rbs.hexindeu.com/api/open/task/detect', data=data, headers=headers).json()
+result = requests.post('http://api.manhattan.hexindeu.com/task/detect', data=data, headers=headers).json()
 
 print result

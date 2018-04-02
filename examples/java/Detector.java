@@ -72,7 +72,7 @@ public class Detector {
 
         String error = null;
         try {
-        	String urlStr = "http://rbs.hexinedu.com/api/open/task/detect";
+        	String urlStr = "http://api.manhattan.hexindeu.com/task/detect";
             HttpClient client = new HttpClient();
             PostMethod method = new PostMethod(urlStr);
 
